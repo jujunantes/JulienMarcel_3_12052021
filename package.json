@@ -1,0 +1,19 @@
+{
+  "name": "julienmarcel_3_12052021",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujunantes/JulienMarcel_3_12052021.git"
+  },
+  "author": "Julien MARCEL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jujunantes/JulienMarcel_3_12052021/issues"
+  },
+  "homepage": "https://github.com/jujunantes/JulienMarcel_3_12052021#readme"
+}
