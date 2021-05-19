@@ -1,0 +1,93 @@
+main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    font-family: Roboto;
+    margin-top: 3rem;
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    article{
+        background: $grisFond;
+        padding: 3.5rem 5% 0 5%;
+        width: 100%;
+
+        h2{
+            margin-bottom: 1.8rem;
+        }
+
+        #blocRestaurants {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            figure {
+                background-color: white;
+                border-radius: 1rem;
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
+                .imgRestaurant{
+                    border-radius: 1rem 1rem 0 0;
+                    object-fit: cover;
+                    height: 11rem;
+                    width: 100%;
+                }
+                figcaption{
+                    padding: .5rem;
+                    padding-bottom: 0;
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+    }
+    aside{
+        margin-bottom: 2.5rem;
+        padding: 0 5% 0 5%;
+        width: 100%;
+        h2{
+            margin-bottom: .5rem;
+        }
+    }
+    #fonctionnement {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.8rem;
+        a{
+            .chiffre{
+                background-color: $couleurPrimaire;
+                border-radius: 50%;
+                color: white;
+                display: inline-block;
+                font-size: 0.9em;
+                height: 1.4rem;
+                left: -.6rem;
+                padding-top: .28rem;
+                position: relative;
+                text-align: center;
+                top: 3.4rem;    
+                width: 1.4rem;
+            }
+            figure{
+                background: $grisFond;
+                border-radius: 1.5rem;
+                box-shadow: 0 .3rem .6rem #e3e3e3;
+                display: flex;
+                //margin: auto auto 0 auto;
+                padding: 2.2rem 1.9rem 1.3rem 1.9rem;
+                .icone{
+                    height: auto;
+                    width: auto;
+                    max-height: 1.2rem;
+                    max-width: 1.1rem;
+                }
+                figcaption{
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+
+}

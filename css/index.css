@@ -1,7 +1,177 @@
-/*
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
-*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icone {
+  height: 1rem;
+  width: 1rem;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  background: #f6f6f6;
+  font-family: Roboto;
+}
+header h1 {
+  background: white;
+  font-family: Shrikhand, cursive;
+  font-size: 1.85rem;
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+  width: 100%;
+}
+header div {
+  background: #eaeaea;
+  box-shadow: inset 0 0.2rem 0.3rem -0.2rem #888;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+header div p {
+  font-weight: 400;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+header div + div {
+  background: #f6f6f6;
+  box-shadow: none;
+  flex-direction: column;
+  line-height: 1.2;
+  padding: unset;
+  text-align: center;
+}
+header div + div h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 3rem 1rem 3rem;
+}
+header div + div p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0 0.5rem 2rem 0.5rem;
+  padding: unset;
+}
+header button {
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  border: none;
+  border-radius: 4rem;
+  box-shadow: 0 0.3rem 0.6rem #b3b3b3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  left: 21%;
+  margin-bottom: 4rem;
+  padding: 0.9rem 0.5rem;
+  position: relative;
+  text-align: center;
+  width: 58%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  font-family: Roboto;
+  margin-top: 3rem;
+}
+main h2 {
+  font-size: 1.5rem;
+}
+main article {
+  background: #f6f6f6;
+  padding: 3.5rem 5% 0 5%;
+  width: 100%;
+}
+main article h2 {
+  margin-bottom: 1.8rem;
+}
+main article #blocRestaurants {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+main article #blocRestaurants figure {
+  background-color: white;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+main article #blocRestaurants figure .imgRestaurant {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  height: 11rem;
+  width: 100%;
+}
+main article #blocRestaurants figure figcaption {
+  padding: 0.5rem;
+  padding-bottom: 0;
+}
+main article #blocRestaurants figure figcaption h3 {
+  font-size: 1.1rem;
+}
+main aside {
+  margin-bottom: 2.5rem;
+  padding: 0 5% 0 5%;
+  width: 100%;
+}
+main aside h2 {
+  margin-bottom: 0.5rem;
+}
+main #fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.8rem;
+}
+main #fonctionnement a .chiffre {
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-size: 0.9em;
+  height: 1.4rem;
+  left: -0.6rem;
+  padding-top: 0.28rem;
+  position: relative;
+  text-align: center;
+  top: 3.4rem;
+  width: 1.4rem;
+}
+main #fonctionnement a figure {
+  background: #f6f6f6;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.3rem 0.6rem #e3e3e3;
+  display: flex;
+  padding: 2.2rem 1.9rem 1.3rem 1.9rem;
+}
+main #fonctionnement a figure .icone {
+  height: auto;
+  width: auto;
+  max-height: 1.2rem;
+  max-width: 1.1rem;
+}
+main #fonctionnement a figure figcaption {
+  padding-left: 2rem;
+}
+
+footer {
+  background: #353535;
+  color: white;
+  padding: 1rem;
+}
 
 /*# sourceMappingURL=index.css.map */
