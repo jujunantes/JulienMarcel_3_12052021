@@ -1,5 +1,29 @@
 footer {
     background: $grisSombre;
     color: white;
-    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    padding: 1.5rem;
+
+    h2{
+        font-family: Shrikhand, cursive;
+        font-size: 1.1rem;
+        font-weight: 100;
+        margin-bottom: 1.4rem;
+    }
+
+    ul{
+        line-height: 1.6rem;
+        list-style: none;
+        margin-bottom: .5rem;
+    }
+
+    a{
+        color:white;
+    }
+
+    .icone {
+        height: .8rem;
+        width: .8rem;
+        margin-right: .6rem;
+    }
 }
