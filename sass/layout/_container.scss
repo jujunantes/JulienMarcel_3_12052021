@@ -10,11 +10,12 @@ main {
 
     article{
         background: $grisFond;
+        margin-bottom: -.1rem;
         padding: 3.5rem 5% 0 5%;
         width: 100%;
 
         h2{
-            margin-bottom: 1.6rem;
+            margin-bottom: 1.5rem;
         }
 
         #blocRestaurants {
@@ -33,28 +34,125 @@ main {
                     color: #219175;
                     font-size: .9rem;
                     font-weight: 500;
+                    letter-spacing: .2px;
                     padding: .2rem .7rem .2rem .7rem;
                     position: absolute;
-                    top: .7rem;
-                    right: .7rem;
+                    top: .85rem;
+                    right: .8rem;
                 }
                 .imgRestaurant{
                     border-radius: 1rem 1rem 0 0;
                     object-fit: cover;
-                    height: 11rem;
+                    height: 10.9rem;
                     width: 100%;
                 }
+
+                .imgPalette {
+                    object-position: -.1rem -3.3rem;
+                }
+
+                .imgEnchantee {
+                    object-position: -.15rem -9.5rem;
+                }
+
+                .imgFrancaise {
+                    object-position: -.25rem -3.4rem;
+                }
+
+                .imgDelice {
+                    object-position: -.15rem -3.5rem;
+                }
+
                 figcaption{
+                    letter-spacing: .2px;
                     padding: .5rem;
+                    padding-left: .8rem;
                     padding-bottom: 1rem;
                     h3{
                         font-size: 1.1rem;
+                    }
+                    span{
+                        letter-spacing: .4px;
                     }
                 }
             }
         }
 
     }
+
+    .menuRestaurant {
+        background-color: $grisFond;
+        border-radius: 2.5rem 2.5rem 0 0;
+        padding-left: .5rem;
+        padding-top: 2.5rem;
+        margin-bottom: -6.4rem;
+        position: relative;
+        top: -6.4rem;
+
+        h2{
+            font-family: Shrikhand, cursive;
+            font-size: 1.76rem;
+            padding-left: .7rem;
+            margin-bottom: 2.4rem;
+        }
+
+        h3{
+            font-weight: 400;
+            letter-spacing: .02rem;
+            margin-bottom: 1.2rem;
+            padding-left: .7rem;
+            position: relative;
+        }
+        h3:after {
+            background-color: $couleurTertiaire;
+            content: "";
+            height: .2rem;
+            width: 2.5rem;
+            position: absolute;
+            left: .7rem;
+            top: 1.25rem;
+        }
+
+        h4{
+            font-size: 1.1rem;
+            letter-spacing: .01rem;
+            margin-bottom: .5rem;
+        }
+
+        span{
+            font-size: .85rem;
+            //letter-spacing: .005rem;
+            color: red;
+        }
+
+        li{
+            //background-color: white;
+            background-color: yellow;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            list-style: none;
+            position: relative;
+
+            .prixPlat{
+                font-size: .9rem;
+                font-weight: 400;
+                position: absolute;
+                right: 1rem;
+                bottom: .9rem;
+                color: red;
+            }
+
+            .choixPlat {
+                display: none;
+            }
+        }
+
+        .checkCircle{
+            width: 1rem;
+        }
+    }
+
     aside{
         margin-bottom: 2.5rem;
         width: 100%;
@@ -66,8 +164,16 @@ main {
     #fonctionnement {
         display: flex;
         flex-direction: column;
-        padding: 0 5% 1.8rem 10%;
+        padding: 0 5% 1.5rem 8%;
         a{
+            :hover{
+                background: #f5edff;
+            }
+            :hover > svg {
+                path{
+                    fill: $couleurPrimaire;
+                }
+            }
             .chiffre{
                 background-color: $couleurPrimaire;
                 border-radius: 50%;
@@ -79,7 +185,8 @@ main {
                 padding-top: .28rem;
                 position: relative;
                 text-align: center;
-                top: 3.4rem;    
+                left: -.6rem;
+                top: 3.1rem;    
                 width: 1.4rem;
             }
             figure{
@@ -87,15 +194,20 @@ main {
                 border-radius: 1.3rem;
                 box-shadow: 0 .3rem .6rem #e3e3e3;
                 display: flex;
-                padding: 2.2rem 1.9rem 1.3rem 1.9rem;
-                .icone{
-                    height: auto;
-                    width: auto;
-                    max-height: 1.2rem;
-                    max-width: 1.1rem;
+                padding: 2rem 2rem 1.5rem 1.5rem;
+                #titreTelephone{
+                    margin-top: -.1rem;
+                    padding-left: 2.4rem;
+                    letter-spacing: .1px;
                 }
-                figcaption{
-                    padding-left: 2rem;
+                #titreListe{
+                    padding-left: 2.1rem;
+                    margin-top: -.1rem;
+                }
+                #titreBoutique{
+                    letter-spacing: .1px;
+                    padding-left: 1.9rem;
+                    margin-top: -.2rem;
                 }
             }
         }
