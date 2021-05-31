@@ -1,0 +1,43 @@
+@media (min-width: 773px) {
+    main {
+        #fonctionnement {
+            flex-direction: row;
+            justify-content: space-between;
+            .carteFonctionnement {
+                width: 30%;
+            }
+        }
+        #conteneurMenu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            #blocMenu1, #blocMenu2, #blocMenu3 {
+                width: 49%;
+                h3{
+                    margin-bottom: 1.35rem;
+                }
+            }
+        }
+        #pageAccueil #blocRestaurants {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            a {
+                width: 49%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1155px) {
+    body {
+        margin:0 auto;
+        max-width: 1250px;
+    }
+    main #conteneurMenu #blocMenu1,
+    main #conteneurMenu #blocMenu2,
+    main #conteneurMenu #blocMenu3 {
+        width: 30%;
+    }
+}

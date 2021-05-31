@@ -11,7 +11,7 @@ main {
     article{
         background: $grisFond;
         margin-bottom: -.1rem;
-        padding: 3.5rem 5% 0 5%;
+        padding: 3.5rem 3% 0 3%;
         width: 100%;
 
         h2{
@@ -83,24 +83,53 @@ main {
     .menuRestaurant {
         background-color: $grisFond;
         border-radius: 2.5rem 2.5rem 0 0;
-        padding-left: .5rem;
+        padding-left: .9rem;
         padding-top: 2.5rem;
-        margin-bottom: -6.4rem;
+        padding-right: .7rem;
+        margin-bottom: -6.35rem;
         position: relative;
         top: -6.4rem;
+
+        #blocMenu1 {
+            margin-bottom: 2.25em;
+            h3{
+                margin-bottom: 1.35rem;
+            }
+        }
+
+        #blocMenu2 {
+            margin-bottom: 2.9em;
+            h3{
+                margin-bottom: 1.5rem;
+            }
+
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+
+        #blocMenu3 {
+            margin-bottom: -.2rem;
+            h3{
+                margin-bottom: 1.4rem;
+            }
+
+            li{
+                margin-bottom: .95rem;
+            }
+        }
 
         h2{
             font-family: Shrikhand, cursive;
             font-size: 1.76rem;
-            padding-left: .7rem;
+            padding-left: .4rem;
             margin-bottom: 2.4rem;
         }
 
         h3{
             font-weight: 400;
             letter-spacing: .02rem;
-            margin-bottom: 1.2rem;
-            padding-left: .7rem;
+            padding-left: .35rem;
             position: relative;
         }
         h3:after {
@@ -109,7 +138,7 @@ main {
             height: .2rem;
             width: 2.5rem;
             position: absolute;
-            left: .7rem;
+            left: .35rem;
             top: 1.25rem;
         }
 
@@ -120,27 +149,28 @@ main {
         }
 
         span{
-            font-size: .85rem;
-            //letter-spacing: .005rem;
-            color: red;
+            font-size: 1rem;
+            letter-spacing: -.6px;
         }
 
         li{
-            //background-color: white;
-            background-color: yellow;
+            background-color: white;
             border-radius: 1rem;
-            margin-bottom: 1rem;
+            box-shadow: 0 .3rem .6rem #e3e3e3;
+            margin-bottom: .87rem;
             padding: 1rem;
+            padding-top: .9rem;
+            padding-left: .7rem;
+            padding-bottom: .8rem;
             list-style: none;
             position: relative;
 
             .prixPlat{
                 font-size: .9rem;
-                font-weight: 400;
+                font-weight: 800;
                 position: absolute;
-                right: 1rem;
+                right: 1.3rem;
                 bottom: .9rem;
-                color: red;
             }
 
             .choixPlat {
@@ -155,7 +185,8 @@ main {
 
     aside{
         margin-bottom: 2.5rem;
-        width: 100%;
+        margin-left: -.5rem;
+        width: 105%;
         h2{
             margin-bottom: .5rem;
             padding-left: 5%;
