@@ -16,6 +16,11 @@
     padding-left: 1.3rem;
     padding-right: 1.3rem;
     text-align: center;
+    &:hover {
+        box-shadow: .3rem .3rem .6rem #a3a3a3;
+        filter: brightness(110%);
+        transition-duration: 200ms;
+    }
 }
 
 

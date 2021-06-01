@@ -44,8 +44,8 @@ html {
   height: 1.6rem;
   width: 1.4rem;
   position: absolute;
-  bottom: 2.2rem;
-  right: 1.5rem;
+  bottom: 2.1rem;
+  right: 1.6rem;
 }
 
 body {
@@ -70,6 +70,11 @@ body {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
   text-align: center;
+}
+.bouton:hover {
+  box-shadow: 0.3rem 0.3rem 0.6rem #a3a3a3;
+  filter: brightness(110%);
+  transition-duration: 200ms;
 }
 
 .boutonRestaurant {
@@ -216,6 +221,12 @@ main article #blocRestaurants figure .imgRestaurant {
   height: 10.9rem;
   width: 100%;
 }
+main article #blocRestaurants figure .coeur:hover path {
+  cursor: pointer;
+  d: path("M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z");
+  fill: #9356dc;
+  transition: 300ms;
+}
 main article #blocRestaurants figure .imgPalette {
   object-position: -0.1rem -3.3rem;
 }
@@ -239,6 +250,14 @@ main article #blocRestaurants figure figcaption h3 {
 }
 main article #blocRestaurants figure figcaption span {
   letter-spacing: 0.4px;
+}
+main li span,
+main li h4 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 85%;
 }
 main .menuRestaurant {
   background-color: #f6f6f6;

@@ -47,6 +47,15 @@ main {
                     width: 100%;
                 }
 
+                .coeur:hover {
+                    path{
+                        cursor: pointer;
+                        d: path("M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z");
+                        fill: $couleurPrimaire;
+                        transition: 300ms;
+                    }
+                }
+
                 .imgPalette {
                     object-position: -.1rem -3.3rem;
                 }
@@ -80,6 +89,14 @@ main {
 
     }
 
+    li span,
+    li h4{
+        display:inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 85%;
+    }
     .menuRestaurant {
         background-color: $grisFond;
         border-radius: 2.5rem 2.5rem 0 0;
@@ -164,7 +181,6 @@ main {
             padding-bottom: .8rem;
             list-style: none;
             position: relative;
-
             .prixPlat{
                 font-size: .9rem;
                 font-weight: 800;
