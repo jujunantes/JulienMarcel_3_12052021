@@ -100,8 +100,10 @@ body {
 
 .bouton:focus {
   outline: 0;
-  outline-style: none;
-  outline-width: 0;
+  /*
+  outline-style:none;
+  outline-width:0;
+  */
 }
 
 .boutonRestaurant {
@@ -291,13 +293,32 @@ main .menuRestaurant {
   position: relative;
   top: -6.5rem;
 }
+@keyframes animBlocsMenu {
+  0% {
+    opacity: 0;
+    padding-top: 1rem;
+    transform: translateY(2rem);
+  }
+  50% {
+    opacity: 0.5;
+    padding-top: 0.5rem;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    padding-top: 0;
+    transform: translateY(0);
+  }
+}
 main .menuRestaurant #blocMenu1 {
+  animation: animBlocsMenu 400ms;
   margin-bottom: 2.1em;
 }
 main .menuRestaurant #blocMenu1 h3 {
   margin-bottom: 1.35rem;
 }
 main .menuRestaurant #blocMenu2 {
+  animation: animBlocsMenu 800ms;
   margin-bottom: 2.9em;
 }
 main .menuRestaurant #blocMenu2 h3 {
@@ -307,6 +328,7 @@ main .menuRestaurant #blocMenu2 li {
   margin-bottom: 1rem;
 }
 main .menuRestaurant #blocMenu3 {
+  animation: animBlocsMenu 1200ms;
   margin-bottom: -0.2rem;
 }
 main .menuRestaurant #blocMenu3 h3 {
@@ -352,7 +374,7 @@ main .menuRestaurant li strong {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
+  width: 85%;
 }
 main .menuRestaurant li {
   background-color: white;
@@ -374,11 +396,16 @@ main .menuRestaurant li .descriptionPlat {
   overflow: hidden;
 }
 main .menuRestaurant li .prixPlat {
+  display: flex;
   align-self: flex-end;
   color: #343434;
   font-size: 0.9rem;
   font-weight: 800;
   padding: 1 0.9rem 0.75rem;
+  position: absolute;
+  left: 70%;
+  bottom: 0.2rem;
+  transform: translateX(2.5rem);
 }
 main .menuRestaurant .choixPlat {
   background-color: #99e2d0;
@@ -391,7 +418,8 @@ main .menuRestaurant .choixPlat {
 main .menuRestaurant .restaurantPlat:hover > .choixPlat {
   opacity: 1;
   width: 5.5rem;
-  transition: 300ms;
+  transform: translateX(0px);
+  transition-duration: 400ms;
 }
 main .menuRestaurant .restaurantPlat > .choixPlat {
   opacity: 0;
@@ -399,20 +427,17 @@ main .menuRestaurant .restaurantPlat > .choixPlat {
   transition: 300ms;
 }
 main .menuRestaurant .restaurantPlat:hover > .choixPlat svg {
-  animation: rotationCoche 300ms;
+  transform: rotate(360deg);
+  transition: 800ms;
+}
+main .menuRestaurant .restaurantPlat:hover .prixPlat {
+  transform: translateX(-10px);
+  transition: 600ms;
 }
 main .menuRestaurant .checkCircle {
   margin: auto;
   width: 1.2rem;
   height: 1.2rem;
-}
-@keyframes rotationCoche {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 main aside {
   margin-bottom: 2.5rem;

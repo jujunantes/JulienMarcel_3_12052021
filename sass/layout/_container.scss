@@ -99,7 +99,26 @@ main {
         position: relative;
         top: -6.5rem;
 
+        @keyframes animBlocsMenu {
+            0% {
+              opacity: 0;
+              padding-top: 1rem;
+              transform: translateY(2rem);
+            }
+            50% {
+              opacity: .5;
+              padding-top: .5rem;
+              transform: translateY(1rem);
+            }
+            100% {
+              opacity: 1;
+              padding-top: 0;
+              transform: translateY(0);
+            }
+          }
+
         #blocMenu1 {
+            animation: animBlocsMenu 400ms;
             margin-bottom: 2.1em;
             h3{
                 margin-bottom: 1.35rem;
@@ -107,6 +126,7 @@ main {
         }
 
         #blocMenu2 {
+            animation: animBlocsMenu 800ms;
             margin-bottom: 2.9em;
             h3{
                 margin-bottom: 1.5rem;
@@ -118,6 +138,7 @@ main {
         }
 
         #blocMenu3 {
+            animation: animBlocsMenu 1200ms;
             margin-bottom: -.2rem;
             h3{
                 margin-bottom: 1.4rem;
@@ -170,7 +191,7 @@ main {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width: 100%;
+            width: 85%;
         }
     
         li{
@@ -192,16 +213,20 @@ main {
                 overflow: hidden;
             }
             .prixPlat{
+                display: flex;
                 align-self: flex-end;
                 color: #343434;
                 font-size: .9rem;
                 font-weight: 800;
                 padding: 1 .9rem .75rem;
+                position: absolute;
+                left:70%;
+                bottom : .2rem;
+                transform: translateX(2.5rem);
             }
         }
         
         .choixPlat {
-            
             background-color: $couleurTertiaire;
             border-radius: 0 1rem 1rem 0;
             display: flex;
@@ -213,7 +238,8 @@ main {
         .restaurantPlat:hover > .choixPlat {
             opacity: 1;
             width: 5.5rem;
-            transition: 300ms;
+            transform: translateX(0px);
+            transition-duration: 400ms;
           }
 
           .restaurantPlat > .choixPlat {
@@ -223,23 +249,20 @@ main {
           }
 
           .restaurantPlat:hover > .choixPlat svg{
-            animation: rotationCoche 300ms;
+            transform: rotate(360deg);
+            transition: 800ms;
           }
           
+        .restaurantPlat:hover .prixPlat {
+            transform: translateX(-10px);
+            transition: 600ms;
+        }
+
         .checkCircle{
             margin: auto;
             width: 1.2rem;
             height: 1.2rem;
         }
-        
-        @keyframes rotationCoche {
-            from {
-              transform: rotate(0deg);
-            }
-            to {
-              transform: rotate(360deg);
-            }
-          }
     }
 
     aside{
