@@ -87,7 +87,6 @@ body {
   left: 21.5%;
   top: 0.1rem;
   margin-bottom: 3.7rem;
-  outline: none;
   padding: 1rem;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
@@ -97,6 +96,12 @@ body {
   box-shadow: 0.3rem 0.3rem 0.6rem #a3a3a3;
   filter: brightness(110%);
   transition-duration: 200ms;
+}
+
+.bouton:focus {
+  outline: 0;
+  outline-style: none;
+  outline-width: 0;
 }
 
 .boutonRestaurant {
