@@ -1,3 +1,69 @@
+#chargement {
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  z-index: 2;
+  span {
+    animation: vague 1.3s ease-in-out 3, disparition 5s;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    font-family: "Shrikhand";
+    font-size: 8rem;
+    transform: translate(0, 75%) scale(0.3);
+    /*
+        Ajout d'un gradient
+        Astuce trouvée à : https://codeworkshop.dev/blog/2020-08-13-how-to-add-a-gradient-to-text-with-css/
+    */
+    background: linear-gradient(45deg, $couleurPrimaire, $couleurSecondaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: 160ms * $i;
+      }
+    }
+  }
+}
+@keyframes vague {
+  50% {
+    transform: translate(0, 0) rotate(5deg);
+  }
+}
+
+@keyframes apparition {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes disparition {
+    0% {
+      opacity: 1;
+    }
+    50% {
+        opacity: .8;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+#conteneurPage, footer {
+    animation: apparition 5s ease-in;
+  }
+
 main {
     display: flex;
     flex-wrap: wrap-reverse;
