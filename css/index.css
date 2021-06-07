@@ -222,6 +222,7 @@ header div + div p {
   display: inline-block;
   font-family: "Shrikhand";
   font-size: 640%;
+  text-shadow: 1px 1px #9356dc, 2px 2px #ff79da, 3px 3px #99e2d0, 4px 4px #9356dc, 5px 5px #ff79da, 6px 6px #99e2d0, 7px 7px #9356dc, 8px 8px #ff79da, 9px 9px #99e2d0, 10px 10px #9356dc, 11px 11px #ff79da, 12px 12px #99e2d0, 13px 13px #9356dc, 14px 14px #ff79da, 15px 15px #99e2d0, 16px 16px #9356dc, 17px 17px #ff79da, 18px 18px #99e2d0, 19px 19px #9356dc, 20px 20px #ff79da, 21px 21px #99e2d0, 22px 22px #9356dc, 23px 23px #ff79da, 24px 24px #99e2d0, 25px 25px #9356dc, 26px 26px 6px #ff79da;
   transform: translate(0, 75%) scale(0.3);
   /*
       Ajout d'un gradient
@@ -286,7 +287,7 @@ header div + div p {
     opacity: 1;
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   100% {
     opacity: 0;

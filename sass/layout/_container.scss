@@ -11,6 +11,7 @@
     display: inline-block;
     font-family: "Shrikhand";
     font-size: 640%;
+    text-shadow: 1px 1px $couleurPrimaire, 2px 2px $couleurSecondaire, 3px 3px $couleurTertiaire, 4px 4px $couleurPrimaire, 5px 5px $couleurSecondaire, 6px 6px $couleurTertiaire, 7px 7px $couleurPrimaire, 8px 8px $couleurSecondaire, 9px 9px $couleurTertiaire, 10px 10px $couleurPrimaire, 11px 11px $couleurSecondaire, 12px 12px $couleurTertiaire, 13px 13px $couleurPrimaire, 14px 14px $couleurSecondaire, 15px 15px $couleurTertiaire, 16px 16px $couleurPrimaire, 17px 17px $couleurSecondaire, 18px 18px $couleurTertiaire, 19px 19px $couleurPrimaire, 20px 20px $couleurSecondaire, 21px 21px $couleurTertiaire, 22px 22px $couleurPrimaire, 23px 23px $couleurSecondaire, 24px 24px $couleurTertiaire, 25px 25px $couleurPrimaire, 26px 26px 6px $couleurSecondaire;
     transform: translate(0, 75%) scale(0.3);
     /*
         Ajout d'un gradient
@@ -53,7 +54,7 @@
       opacity: 1;
     }
     50% {
-        opacity: .8;
+        opacity: .7;
     }
     100% {
       opacity: 0;
