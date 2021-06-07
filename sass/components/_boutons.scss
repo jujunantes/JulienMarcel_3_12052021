@@ -12,6 +12,7 @@
     left: 21.5%;
     top: .1rem;
     margin-bottom: 3.7rem;
+    outline: 0;
     padding: 1rem;
     padding-left: 1.3rem;
     padding-right: 1.3rem;
@@ -22,15 +23,11 @@
         transition-duration: 200ms;
     }
 }
-
+/*
 .bouton:focus {
     outline: 0;
-    /*
-    outline-style:none;
-    outline-width:0;
-    */
 } 
-
+*/
 .boutonRestaurant {
     margin-top: 3rem;
     display: block;

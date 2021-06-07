@@ -13,7 +13,7 @@
     display: inline-block;
     font-family: "Shrikhand";
     font-size: 640%;
-    text-shadow: 1px 1px $couleurSecondaire, 2px 2px $couleurSecondaire, 3px 3px $couleurSecondaire, 4px 4px $couleurSecondaire, 5px 5px $couleurSecondaire, 6px 6px $couleurSecondaire, 7px 7px $couleurSecondaire, 8px 8px $couleurSecondaire, 9px 9px $couleurSecondaire, 10px 10px $couleurSecondaire, 11px 11px $couleurSecondaire, 12px 12px $couleurSecondaire, 13px 13px $couleurSecondaire, 14px 14px $couleurSecondaire, 15px 15px $couleurSecondaire, 16px 16px $couleurSecondaire, 17px 17px $couleurSecondaire, 18px 18px $couleurSecondaire, 19px 19px $couleurSecondaire, 20px 20px $couleurSecondaire, 21px 21px $couleurSecondaire, 22px 22px $couleurSecondaire, 23px 23px $couleurSecondaire, 24px 24px $couleurSecondaire, 25px 25px $couleurSecondaire, 26px 26px 6px $couleurSecondaire;
+    text-shadow: 1px 1px $couleurSecondaire, 2px 2px $couleurSecondaire, 3px 3px $couleurSecondaire, 4px 4px $couleurSecondaire, 5px 5px $couleurSecondaire, 6px 6px $couleurSecondaire, 7px 7px $couleurSecondaire, 8px 8px $couleurSecondaire, 9px 9px $couleurSecondaire, 10px 10px $couleurSecondaire, 11px 11px $couleurSecondaire, 12px 12px $couleurSecondaire, 13px 13px $couleurSecondaire, 14px 14px $couleurSecondaire, 15px 15px $couleurSecondaire, 16px 16px $couleurSecondaire, 17px 17px $couleurSecondaire, 18px 18px $couleurSecondaire, 19px 19px $couleurSecondaire, 20px 20px $couleurSecondaire, 21px 21px $couleurSecondaire, 22px 22px $couleurSecondaire, 23px 23px $couleurSecondaire, 24px 24px $couleurSecondaire, 25px 25px $couleurPrimaire, 26px 26px 6px $couleurPrimaire;
     transform: translate(0, 75%) scale(0.3);
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
