@@ -217,7 +217,7 @@ header div + div p {
   z-index: 2;
 }
 #chargement span {
-  animation: vague 1.3s ease-in-out 3, disparition 5s;
+  animation: vague 1.3s ease-in-out 3, disparition 4s;
   animation-fill-mode: forwards;
   display: inline-block;
   font-family: "Shrikhand";
@@ -293,7 +293,7 @@ header div + div p {
     opacity: 0;
   }
 }
-#conteneurPage, footer {
+#conteneurPage, #footerIndex {
   animation: apparition 5s ease-in;
 }
 
@@ -405,14 +405,14 @@ main .menuRestaurant {
   }
 }
 main .menuRestaurant #blocMenu1 {
-  animation: animBlocsMenu 400ms;
+  animation: animBlocsMenu 400ms ease-in-out;
   margin-bottom: 2.1em;
 }
 main .menuRestaurant #blocMenu1 h3 {
   margin-bottom: 1.35rem;
 }
 main .menuRestaurant #blocMenu2 {
-  animation: animBlocsMenu 800ms;
+  animation: animBlocsMenu 800ms ease-in-out;
   margin-bottom: 2.9em;
 }
 main .menuRestaurant #blocMenu2 h3 {
@@ -422,7 +422,7 @@ main .menuRestaurant #blocMenu2 li {
   margin-bottom: 1rem;
 }
 main .menuRestaurant #blocMenu3 {
-  animation: animBlocsMenu 1200ms;
+  animation: animBlocsMenu 1200ms ease-in-out;
   margin-bottom: -0.2rem;
 }
 main .menuRestaurant #blocMenu3 h3 {
@@ -522,11 +522,11 @@ main .menuRestaurant .restaurantPlat > .choixPlat {
 }
 main .menuRestaurant .restaurantPlat:hover > .choixPlat svg {
   transform: rotate(360deg);
-  transition: 800ms;
+  transition: 400ms;
 }
 main .menuRestaurant .restaurantPlat:hover .prixPlat {
   transform: translateX(-10px);
-  transition: 600ms;
+  transition: 400ms;
 }
 main .menuRestaurant .checkCircle {
   margin: auto;

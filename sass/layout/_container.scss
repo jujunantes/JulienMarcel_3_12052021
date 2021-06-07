@@ -6,7 +6,7 @@
   top: 30%;
   z-index: 2;
   span {
-    animation: vague 1.3s ease-in-out 3, disparition 5s;
+    animation: vague 1.3s ease-in-out 3, disparition 4s;
     animation-fill-mode: forwards;
     display: inline-block;
     font-family: "Shrikhand";
@@ -61,7 +61,7 @@
     }
   }
   
-#conteneurPage, footer {
+#conteneurPage, #footerIndex {
     animation: apparition 5s ease-in;
   }
 
@@ -185,7 +185,7 @@ main {
           }
 
         #blocMenu1 {
-            animation: animBlocsMenu 400ms;
+            animation: animBlocsMenu 400ms ease-in-out;
             margin-bottom: 2.1em;
             h3{
                 margin-bottom: 1.35rem;
@@ -193,7 +193,7 @@ main {
         }
 
         #blocMenu2 {
-            animation: animBlocsMenu 800ms;
+            animation: animBlocsMenu 800ms ease-in-out;
             margin-bottom: 2.9em;
             h3{
                 margin-bottom: 1.5rem;
@@ -205,7 +205,7 @@ main {
         }
 
         #blocMenu3 {
-            animation: animBlocsMenu 1200ms;
+            animation: animBlocsMenu 1200ms ease-in-out;
             margin-bottom: -.2rem;
             h3{
                 margin-bottom: 1.4rem;
@@ -317,14 +317,14 @@ main {
 
           .restaurantPlat:hover > .choixPlat svg{
             transform: rotate(360deg);
-            transition: 800ms;
+            transition: 400ms;
           }
-          
+        
+        
         .restaurantPlat:hover .prixPlat {
             transform: translateX(-10px);
-            transition: 600ms;
+            transition: 400ms; // Plus joli avec 600ms (la coche "pousse" le prix), mais non-contractuel
         }
-
         .checkCircle{
             margin: auto;
             width: 1.2rem;
