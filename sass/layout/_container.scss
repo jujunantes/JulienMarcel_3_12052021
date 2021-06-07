@@ -8,22 +8,12 @@
   span {
     animation: vague 1.3s ease-in-out 3, disparition 4s;
     animation-fill-mode: forwards;
+    color: $couleurPrimaire;
     display: inline-block;
     font-family: "Shrikhand";
     font-size: 640%;
-    text-shadow: 1px 1px $couleurPrimaire, 2px 2px $couleurSecondaire, 3px 3px $couleurTertiaire, 4px 4px $couleurPrimaire, 5px 5px $couleurSecondaire, 6px 6px $couleurTertiaire, 7px 7px $couleurPrimaire, 8px 8px $couleurSecondaire, 9px 9px $couleurTertiaire, 10px 10px $couleurPrimaire, 11px 11px $couleurSecondaire, 12px 12px $couleurTertiaire, 13px 13px $couleurPrimaire, 14px 14px $couleurSecondaire, 15px 15px $couleurTertiaire, 16px 16px $couleurPrimaire, 17px 17px $couleurSecondaire, 18px 18px $couleurTertiaire, 19px 19px $couleurPrimaire, 20px 20px $couleurSecondaire, 21px 21px $couleurTertiaire, 22px 22px $couleurPrimaire, 23px 23px $couleurSecondaire, 24px 24px $couleurTertiaire, 25px 25px $couleurPrimaire, 26px 26px 6px $couleurSecondaire;
+    text-shadow: 1px 1px $couleurSecondaire, 2px 2px $couleurSecondaire, 3px 3px $couleurSecondaire, 4px 4px $couleurSecondaire, 5px 5px $couleurSecondaire, 6px 6px $couleurSecondaire, 7px 7px $couleurSecondaire, 8px 8px $couleurSecondaire, 9px 9px $couleurSecondaire, 10px 10px $couleurSecondaire, 11px 11px $couleurSecondaire, 12px 12px $couleurSecondaire, 13px 13px $couleurSecondaire, 14px 14px $couleurSecondaire, 15px 15px $couleurSecondaire, 16px 16px $couleurSecondaire, 17px 17px $couleurSecondaire, 18px 18px $couleurSecondaire, 19px 19px $couleurSecondaire, 20px 20px $couleurSecondaire, 21px 21px $couleurSecondaire, 22px 22px $couleurSecondaire, 23px 23px $couleurSecondaire, 24px 24px $couleurSecondaire, 25px 25px $couleurSecondaire, 26px 26px 6px $couleurSecondaire;
     transform: translate(0, 75%) scale(0.3);
-    /*
-        Ajout d'un gradient
-        Astuce trouvée à : https://codeworkshop.dev/blog/2020-08-13-how-to-add-a-gradient-to-text-with-css/
-    */
-    background: linear-gradient(45deg, $couleurPrimaire, $couleurSecondaire);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
         animation-delay: 160ms * $i;
