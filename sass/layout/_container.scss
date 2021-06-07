@@ -1,3 +1,4 @@
+// Animation de chargement...
 #chargement {
   width: 100vw;
   text-align: center;
@@ -54,6 +55,7 @@
 #conteneurPage, #footerIndex {
     animation: apparition 4s ease-in;
   }
+// ... Fin animation de chargement
 
 main {
     display: flex;
