@@ -90,6 +90,7 @@ body {
   left: 21.5%;
   top: 0.1rem;
   margin-bottom: 3.7rem;
+  outline: none;
   padding: 1rem;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
@@ -213,14 +214,13 @@ header div + div p {
   z-index: 2;
 }
 #chargement span {
-  animation: vague 1.3s ease-in-out 3, disparition 4s;
+  animation: oscillation 1.3s 3, disparition 4s;
   animation-fill-mode: forwards;
   color: #9356dc;
   display: inline-block;
   font-family: "Shrikhand";
   font-size: 640%;
   text-shadow: 1px 1px #ff79da, 2px 2px #ff79da, 3px 3px #ff79da, 4px 4px #ff79da, 5px 5px #ff79da, 6px 6px #ff79da, 7px 7px #ff79da, 8px 8px #ff79da, 9px 9px #ff79da, 10px 10px #ff79da, 11px 11px #ff79da, 12px 12px #ff79da, 13px 13px #ff79da, 14px 14px #ff79da, 15px 15px #ff79da, 16px 16px #ff79da, 17px 17px #ff79da, 18px 18px #ff79da, 19px 19px #ff79da, 20px 20px #ff79da, 21px 21px #ff79da, 22px 22px #ff79da, 23px 23px #ff79da, 24px 24px #ff79da, 25px 25px #9356dc, 26px 26px 6px #9356dc;
-  transform: translate(0, 75%) scale(0.3);
 }
 #chargement span:nth-child(1) {
   animation-delay: 160ms;
@@ -253,9 +253,9 @@ header div + div p {
   animation-delay: 1600ms;
 }
 
-@keyframes vague {
+@keyframes oscillation {
   50% {
-    transform: translate(0, 0) rotate(5deg);
+    transform: translateY(-75%) scaleY(0.8);
   }
 }
 @keyframes apparition {
