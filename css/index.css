@@ -103,11 +103,6 @@ body {
   transition-duration: 200ms;
 }
 
-/*
-.bouton:focus {
-    outline: 0;
-} 
-*/
 .boutonRestaurant {
   margin-top: 3rem;
   display: block;
@@ -305,6 +300,8 @@ main article .titre h2 {
   font-weight: 100;
   letter-spacing: -0.5px;
   margin-top: -0.2rem;
+  padding-right: 3.5rem;
+  word-break: break-word;
 }
 main article h2 {
   margin-bottom: 1.5rem;
